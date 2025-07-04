@@ -134,3 +134,32 @@ footer {
     padding: 15px;
     font-size: 14px;
 }
+
+/* Ye normal styles hain */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Ab yahan likho media query ↓ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .box, .card, .course-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
